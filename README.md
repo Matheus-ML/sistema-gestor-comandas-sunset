@@ -89,9 +89,61 @@ Este sistema demonstra:
 
 ---
 
-## ⚙ Como Executar o Projeto
+## ⚙️ Como Executar o Projeto
 
-### Instalar dependências
+Este projeto pode ser executado em modo de desenvolvimento ou gerar uma versão para produção.
+
+---
+
+### 📋 Pré-requisitos
+
+Antes de começar, você precisará ter instalado em sua máquina:
+
+- Node.js (versão 18 ou superior recomendada)
+- npm (geralmente instalado junto com o Node)
+- Git (opcional, mas recomendado)
+
+Para verificar se já possui instalado, no CMD digite:
+```bash
+node -v
+npm -v
+```
+
+### 📦 1. Clonar o Repositório
 
 ```bash
+git clone https://github.com/Matheus-ML/sistema-gestor-comandas.git
+cd sistema-gestor-comandas
+```
+
+### 📥 2. Instalar Dependências
+```bash
 npm install
+```
+Esse comando instalará todas as bibliotecas necessárias para o funcionamento do sistema.
+
+Caso o comando `node -v` não funcione, será necessário instalar o Node.js:
+
+1. Acesse https://nodejs.org
+2. Baixe a versão LTS
+3. Instale normalmente
+4. Reinicie o terminal
+
+### 💻 4. Executar em Ambiente de Desenvolvimento
+```bash
+npm run dev
+```
+O sistema será iniciado e poderá ser acessado via navegador local (normalmente em http://localhost:5173).
+
+### 🏗 5. Gerar Build para Produção
+```bash
+npm run build
+```
+Esse comando criará a versão otimizada do projeto na pasta dist.
+
+### 🖥 6. Gerar Executável Desktop (Electron)
+Caso o projeto esteja configurado com Electron:
+```bash
+npm run electron:build
+```
+Será gerado um executável pronto para instalação e uso local.
